@@ -30,15 +30,16 @@ You should see this screen pop up:
 White or black?
 
 -- All inputs are typed in and entered. All case sensitive -- 
-Type the side you are playing, and enter
+Type the side you are playing, and enter (white / black).
 
 How to Move:
 1. When it is your move, you should see a prompt like this: Enter your move:
-2. Type the square of the piece you want to move then a "-" then the square on which you want to move the piece too (ex. e2-e4). ALL LOWERCASE
-3. The program will accept any move you put in, so you have to make sure it is the right one. 
+2. Type the square of the piece you want to move then the square on which you want to move the piece too (ex. e2e4). ALL LOWERCASE
+3. To capture a piece, you HAVE to move the piece capturing to the piece being captured.
+3. The program will accept and preform any move you put in, so you have to make sure it is the right one (doesn't check for illegal moves). 
 4. The program will continously prompt you for moves until to type "stop" and enter. This is so you can enter moves like castling and en passant. 
 
-After you move, the program will automatically move, and print the resulting board after both of your moves. It then will become your move once again.
+After you move, the engine will automatically move, and print the resulting board after both of your moves. It then will become your move once again.
 
 Reading the board:
 
@@ -56,7 +57,7 @@ BK - Black King
 BQ - Black Queen
 Bp - Black Pawn
 
-Warnings:
+Note:
 Currently, promoting is not implemented. Once the pawn reaches the edge of the board, it will just stay there and do nothing.
 
 
